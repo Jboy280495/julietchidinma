@@ -1,45 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Israel Julia Chidinma</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-
-body{font-family:Arial;margin:0;background:#f4f4f4;}
-header{background:#1abc9c;color:white;padding:20px;text-align:center;}
-nav{background:#333;padding:12px;text-align:center;}
-nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
-nav a:hover{color:yellow;}
-
-section{text-align:center;padding:40px;}
-
-input,textarea{
-width:60%;
-padding:10px;
-margin:10px;
-border-radius:5px;
-border:1px solid #ccc;
-}
-
-button{
-background:#1abc9c;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:5px;
-}
-
-footer{background:#333;color:white;text-align:center;padding:20px;}
-
+body {font-family: Arial, sans-serif; margin:0; background:#f4f4f4; scroll-behavior:smooth;}
+header {background:#1abc9c; color:white; padding:25px; text-align:center;}
+nav {background:#222; padding:15px; text-align:center;}
+nav a {color:white; margin:15px; text-decoration:none; font-weight:bold; font-size:18px;}
+nav a:hover {color:#1abc9c;}
+section {padding:60px 20px; text-align:center;}
+.contact-box {background:white; width:60%; margin:auto; padding:30px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+input, textarea {width:90%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc;}
+button {background:#1abc9c; color:white; padding:12px 25px; border:none; border-radius:6px; cursor:pointer;}
+button:hover {background:#16a085;}
+.icons {font-size:20px; margin-top:15px;}
+.icons i {margin-right:10px; color:#1abc9c;}
+footer {background:#222; color:white; text-align:center; padding:25px; margin-top:40px;}
 </style>
-
 </head>
-
 <body>
 
 <header>
 <h1>Contact Me</h1>
+<p>Get in touch for academic or project inquiries</p>
 </header>
 
 <nav>
@@ -49,32 +36,29 @@ footer{background:#333;color:white;text-align:center;padding:20px;}
 </nav>
 
 <section>
-
-<p>Email: juliachidinma767@gmail.com</p>
-
-<p>Phone: 09017147114</p>
+<div class="contact-box">
+<h2>Contact Information</h2>
+<p class="icons"><i class="fas fa-envelope"></i> juliachidinma767@gmail.com</p>
+<p class="icons"><i class="fas fa-phone"></i> 09017147114</p>
 
 <h3>Send a Message</h3>
-
 <form>
-
 <input type="text" placeholder="Your Name"><br>
-
 <input type="email" placeholder="Your Email"><br>
-
-<textarea placeholder="Your Message"></textarea><br>
-
-<button>Send</button>
-
+<textarea rows="5" placeholder="Your Message"></textarea><br>
+<button>Send Message</button>
 </form>
+</div>
+</section>
 
+<section>
+<h2>Location / Google Map</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.463637224212!2d6.991528574438111!3d4.819178546013229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069c6b9ed7f2c23%3A0x68a2de9fa03a40b1!2sPort%20Harcourt%2C%20Rivers%20State!5e0!3m2!1sen!2sng!4v1600000000000!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 <footer>
-
-<p>Israel Julia Chidinma</p>
-<p>Website and Blog Development (JMS 467)</p>
-
+<p>Created by Israel Julia Chidinma | Website and Blog Development (JMS 467)</p>
+<p>Email: juliachidinma767@gmail.com</p>
 </footer>
 
 </body>
