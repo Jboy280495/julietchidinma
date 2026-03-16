@@ -158,3 +158,63 @@ margin-top:40px;
 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 
 <img src="https://images.unsplash.com/photo-1503676260728-1c
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" style="width:100%; height:420px;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" style="width:100%; height:420px;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" style="width:100%; height:420px;">
+  </div>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<style>
+.mySlides {display:none;}
+.fade {animation-name: fade; animation-duration: 2s;}
+@keyframes fade {from {opacity: 0.4} to {opacity: 1}}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #1abc9c;
+}
+</style>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
