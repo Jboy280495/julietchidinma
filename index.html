@@ -4,24 +4,27 @@
 
 <title>Israel Julia Chidinma | Educational Portfolio</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
 
 body{
 font-family:Arial;
 margin:0;
 background:#f4f4f4;
+scroll-behavior:smooth;
 }
 
 header{
 background:#1abc9c;
 color:white;
-padding:20px;
+padding:25px;
 text-align:center;
 }
 
 nav{
-background:#333;
-padding:12px;
+background:#222;
+padding:15px;
 text-align:center;
 }
 
@@ -34,29 +37,29 @@ font-size:18px;
 }
 
 nav a:hover{
-color:yellow;
+color:#1abc9c;
 }
 
 .slideshow{
 width:100%;
-height:400px;
+height:420px;
 overflow:hidden;
 position:relative;
 }
 
 .slideshow img{
 width:100%;
-height:400px;
+height:420px;
 position:absolute;
-animation:slide 15s infinite;
+animation:slide 18s infinite;
 }
 
 .slideshow img:nth-child(2){
-animation-delay:5s;
+animation-delay:6s;
 }
 
 .slideshow img:nth-child(3){
-animation-delay:10s;
+animation-delay:12s;
 }
 
 @keyframes slide{
@@ -68,7 +71,7 @@ animation-delay:10s;
 }
 
 section{
-padding:40px;
+padding:60px 20px;
 text-align:center;
 }
 
@@ -76,15 +79,26 @@ text-align:center;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:25px;
 }
 
 .card{
 background:white;
-padding:20px;
-width:250px;
-border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.2);
+padding:25px;
+width:260px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:40px;
+color:#1abc9c;
+margin-bottom:10px;
 }
 
 .gallery{
@@ -95,22 +109,27 @@ gap:20px;
 }
 
 .gallery img{
-width:250px;
+width:260px;
 border-radius:10px;
-box-shadow:0 3px 8px rgba(0,0,0,0.2);
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
 }
 
-video{
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+iframe{
 margin-top:20px;
-width:70%;
 border-radius:10px;
 }
 
 footer{
-background:#333;
+background:#222;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
+margin-top:40px;
 }
 
 </style>
@@ -120,149 +139,22 @@ padding:20px;
 <body>
 
 <header>
+
 <h1>Israel Julia Chidinma</h1>
 <p>Website and Blog Development (JMS 467)</p>
+
 </header>
 
 <nav>
+
 <a href="index.html">Home</a>
 <a href="course.html">Course</a>
 <a href="contact.html">Contact</a>
+
 </nav>
 
 <div class="slideshow">
 
 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
 
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
-
-<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
-
-</div>
-
-<section>
-
-<h2>About Me</h2>
-
-<p>
-Hello! My name is <b>Israel Julia Chidinma</b>.  
-I am a finalist studying Website and Blog Development (JMS 467).  
-This website is an academic project created to demonstrate how HTML and CSS can be used to design a simple educational website.
-</p>
-
-</section>
-
-<section>
-
-<h2>My Skills</h2>
-
-<div class="card-container">
-
-<div class="card">
-<h3>HTML</h3>
-<p>Building the structure of web pages using headings, links, images and content.</p>
-</div>
-
-<div class="card">
-<h3>CSS</h3>
-<p>Designing websites with colours, layouts and responsive styling.</p>
-</div>
-
-<div class="card">
-<h3>Navigation</h3>
-<p>Linking multiple pages together for smooth website navigation.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Learning Objectives</h2>
-
-<ul>
-<li>Understand the structure of HTML documents</li>
-<li>Create multi-page websites</li>
-<li>Apply CSS styling to web pages</li>
-<li>Develop clean and user-friendly designs</li>
-<li>Publish websites online</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Project Description</h2>
-
-<p>
-This website is part of a course assignment for Website and Blog Development.  
-It demonstrates how students can design and structure a simple multi-page website using HTML and CSS.
-</p>
-
-</section>
-
-<section>
-
-<h2>Importance of Website Development</h2>
-
-<p>
-Website development is important because it allows individuals, businesses and organizations to establish an online presence.
-Websites help in sharing information, promoting services, and connecting people globally.
-</p>
-
-</section>
-
-<section>
-
-<h2>Benefits of Website Development</h2>
-
-<ul>
-<li>Improves communication and information sharing</li>
-<li>Creates online visibility</li>
-<li>Helps businesses reach more customers</li>
-<li>Encourages digital learning and innovation</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Education Image Gallery</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-<img src="https://images.unsplash.com/photo-1503676382389-4809596d5290">
-<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572">
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Educational Video</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg"
-title="HTML Tutorial"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-</section>
-
-<footer>
-
-<p>Created by Israel Julia Chidinma</p>
-<p>Course: Website and Blog Development (JMS 467)</p>
-<p>Email: juliachidinma767@gmail.com</p>
-<p>Educational Website Project 2026</p>
-
-</footer>
-
-</body>
-</html>
+<img src="https://images.unsplash.com/photo-1503676260728-1c
